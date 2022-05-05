@@ -1,0 +1,46 @@
+body {
+  border: 1px solid red;
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+}
+
+#color-palette {
+  margin-left: 33.3%;
+}
+
+.color {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+#pixel-board {
+  width: 17%;
+  margin-left: 41%;
+  margin-top: 10px;
+}
+
+.pixel {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -2px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+#clear-board {
+  border: 1px solid black;
+  margin-left: 47%;
+}
+
+#input-section {
+  margin-left: 40%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
