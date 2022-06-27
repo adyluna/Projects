@@ -1,0 +1,593 @@
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+
+@import url('http://fonts.cdnfonts.com/css/magic-school-one-2');
+
+@import url('http://fonts.cdnfonts.com/css/magic-school-one');
+
+@import url('http://fonts.cdnfonts.com/css/magicmedieval');
+
+@import url('http://fonts.cdnfonts.com/css/isabella');
+
+@import url('http://fonts.cdnfonts.com/css/goudy-mediaeval');
+
+@import url('http://fonts.cdnfonts.com/css/medieval-sharp');
+
+@import url('http://fonts.cdnfonts.com/css/better-night');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+#trybewarts-header-title {
+  font-family: Magic School One, sans-serif;
+  text-shadow: rgb(39, 38, 38) 2.5px 0 0;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 60px;
+  font-variant: small-caps;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(221, 221, 221, 0.459);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#rodape {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 167, 145);
+  padding: 5px;
+  align-items: center;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.item-form-login {
+  width: 180px;
+  border: none;
+  padding: 8px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+#button-login {
+  margin-left: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: rgb(64, 204, 178);
+  color: black;
+}
+
+#button-login:hover {
+  margin-left: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 800;
+  background-color: rgb(64, 204, 178);
+  color: white;
+}
+
+#evaluation-form input [ type = 'text' ] {
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+#evaluation-form input [ type = 'email' ] {
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+#house {
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 5px;
+  width: 220px;
+}
+
+#textarea {
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 150px;
+  padding: 8px;
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+#submit-btn {
+  padding: 5px;
+  width: 150px;
+  border-radius: 8px;
+  border: 0.4px solid black;
+  margin-top: 10px;
+}
+
+#submit-btn:hover {
+  font-weight: 600;
+}
+
+#toRightCounter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#familySection {
+  display: flex;
+  flex-direction: column;
+  border-top: 0.2px solid black;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#NSES {
+  display: flex;
+  justify-content: space-between;
+  width: 675px;
+  flex-direction: column;
+}
+
+#NSES input {
+  width: 220px;
+}
+
+#content-conteudos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 0.3px solid black;
+  margin-top: 10px;
+}
+
+#rateSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 0.3px solid black;
+  margin-top: 20px;
+}
+
+#text-area-coment {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 0.3px solid black;
+  margin-top: 20px;
+}
+
+#agreement-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#rate-section {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+}
+
+.font-harry-alternate {
+  font-family: Medieval Sharp, sans-serif;
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+
+.font-harry {
+  font-family: Goudy Mediaeval, sans-serif;
+  font-size: 20px;
+}
+
+.font-harry-alternate2 {
+  font-family: Better Night, sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#input-email {
+  width: 240px;
+}
+
+#input-name {
+  width: 240px;
+}
+
+#input-lastname {
+  width: 240px;
+}
+
+/* Abaixo estão a parte de responsividade do site */
+
+@media only screen and ( max-width : 1165px ) and ( min-width : 886px ) {
+
+  #trybewarts-forms-logo {
+    display: none;
+    visibility: hidden;
+  }
+
+  #main {
+    width: 100vw;
+  }
+}
+
+@media only screen and ( max-width : 885px ) and ( min-width : 624px ) {
+
+  #trybewarts-forms-logo {
+    display: none;
+    visibility: hidden;
+  }
+
+  #main {
+    width: 100vw;
+  }
+
+  #trybewarts-header-title {
+    display: none;
+    visibility: hidden;
+  }
+
+  .header {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  #NSES {
+    width: 570px;
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    margin-left: 5vh;
+    margin-right: 15vh;
+  }
+
+  #NSES input {
+    width: 180px;
+  }
+
+  #house {
+    width: 180px;
+  }
+
+  #name-lastname {
+    display: flex;
+  }
+
+  #email-select {
+    display: flex;
+  }
+
+  #familySection {
+    margin-left: 5vh;
+    margin-right: 12vh;
+  }
+
+  #content-conteudos {
+    margin-left: 5vh;
+    margin-right: 12vh;
+  }
+
+  #rateSection {
+    margin-left: 5vh;
+    margin-right: 12vh;
+  }
+
+  #text-area-coment {
+    margin-left: 5vh;
+    margin-right: 12vh;
+  }
+
+  #agreement-content {
+    margin-left: 5vh;
+    margin-right: 12vh;
+  }
+
+  #submit-btn {
+    margin-left: 5vh;
+    margin-right: 12vh;
+  }
+}
+
+@media only screen and ( max-width : 623px ) {
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburguer:after , #hamburguer:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #login.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #login.active #hamburguer:before {
+    transform: rotate(135deg);
+  }
+
+  #login.active #hamburguer:after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    right: 0;
+    background: rgba(50, 167, 146, 0.644);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu .item-form-login {
+    width: 350px;
+    margin: 10px auto;
+  }
+
+  #menu #button-login {
+    width: 150px;
+    margin: 10px auto;
+  }
+
+  #login.active #menu {
+    height: calc(100vh - 95px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #trybewarts-header-title {
+    display: none;
+    visibility: hidden;
+  }
+
+  #trybewarts-forms-logo {
+    display: none;
+    visibility: hidden;
+  }
+
+  #main {
+    width: 100vw;
+  }
+
+  #NSES {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vh;
+    margin-right: 15vh;
+    gap: 0;
+  }
+
+  #familySection {
+    margin-left: 20vh;
+    margin-right: 15vh;
+  }
+
+  #content-conteudos {
+    margin-left: 20vh;
+    margin-right: 15vh;
+  }
+
+  #rateSection {
+    margin-left: 20vh;
+    margin-right: 15vh;
+  }
+
+  #text-area-coment {
+    margin-left: 20vh;
+    margin-right: 15vh;
+  }
+
+  #agreement-content {
+    margin-left: 20vh;
+    margin-right: 15vh;
+  }
+
+  #submit-btn {
+    margin-left: 20vh;
+    margin-right: 15vh;
+  }
+
+}
+
+@media only screen and ( min-width : 459px ) and ( max-width : 530px ) {
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburguer:after , #hamburguer:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #login.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #login.active #hamburguer:before {
+    transform: rotate(135deg);
+  }
+
+  #login.active #hamburguer:after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    right: 0;
+    background: rgba(50, 167, 146, 0.644);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu .item-form-login {
+    width: 350px;
+    margin: 10px auto;
+  }
+
+  #menu #button-login {
+    width: 150px;
+    margin: 10px auto;
+  }
+
+  #login.active #menu {
+    height: calc(100vh - 95px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #trybewarts-header-title {
+    display: none;
+    visibility: hidden;
+  }
+
+  #trybewarts-forms-logo {
+    display: none;
+    visibility: hidden;
+  }
+
+  #main {
+    width: 100vw;
+  }
+
+  #house {
+    width: 180px;
+  }
+
+  #NSES {
+    width: 400px;
+  }
+
+  #NSES input {
+    width: 180px;
+  }
+
+  #familySection {
+    margin-left: 20vh;
+    margin-right: 25vh;
+  }
+
+  #content-conteudos {
+    margin-left: 20vh;
+    margin-right: 25vh;
+  }
+
+  #rateSection {
+    margin-left: 20vh;
+    margin-right: 25vh;
+  }
+
+  #text-area-coment {
+    margin-left: 20vh;
+    margin-right: 25vh;
+  }
+
+  #agreement-content {
+    margin-left: 20vh;
+    margin-right: 25vh;
+  }
+
+  #submit-btn {
+    margin-left: 20vh;
+    margin-right: 25vh;
+  }
+
+  #rate-section {
+    width: 400px;
+    margin-left: 0;
+    margin-right: 25vh;
+  }
+}

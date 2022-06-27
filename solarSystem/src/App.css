@@ -1,0 +1,30 @@
+body {
+  background-image: url('./images/background.png');
+}
+
+.solarSystem {
+  align-items: center;
+  border: 1px solid white;
+  display: flex;
+  margin: 20px;
+}
+
+.planetImage {
+  max-height: 130px;
+  max-width: 130px;
+}
+
+.mission {
+  border: 3px solid white;
+  border-radius: 1rem;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.missions {
+  border: 1px solid white;
+  display: flex;
+  flex-flow: row wrap;
+}
