@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybewarts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="Logo do header da página"
+            width="80px">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <nav id="login">
+            <form action="" method="get" onsubmit="return false" class="trybewarts-login">
+                <div id="menu" role="login">
+                    <input class="item-form-login font-harry-alternate2" type="email" name="email" id="email"
+                        placeholder="Email" autocomplete="off">
+                    <input class="item-form-login font-harry-alternate2" type="password" name="password" id="password"
+                        placeholder="Senha">
+                    <button type="submit" id="button-login" value="Entrar" class="font-harry">Entrar</button>
+                </div>
+            </form>
+            
+            <button aria-label="Abrir Login" aria-controls="Login" aria-haspopup="true" id="btn-mobile"
+                aria-expanded="false">Login
+                <span id="hamburguer"></span>
+            </button>
+        </nav>
+    </header>
+    <main id="main">
+    <form action="" method="get" onsubmit="return false" id="evaluation-form">
+    <article id="NSES"><!--Adicionei esse article só para englobar as duas sections dentro dela-->
+        <section id="name-lastname">
+            <input type="text" name="name" id="input-name" placeholder="Nome" autocomplete="off" class="font-harry-alternate2" required>
+            <input type="text" name="name" id="input-lastname" placeholder="Sobrenome" autocomplete="off" class="font-harry-alternate2" required>
+        </section>
+
+        <section id="email-select">
+            <input type="email" name="email" id="input-email" placeholder="Email" autocomplete="off" class="font-harry-alternate2" required>
+            <select name="" id="house" class="font-harry">
+                <option value="none" selected disabled>Selecione uma casa</option>
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+        </section>
+    </article>
+        <section id="familySection">
+            <label for="" id="label-family" class="font-harry">Qual sua família?</label>
+            
+            <div>
+            <input type="radio" name="family" id="front" value="Frontend">
+            <label for="front" class="font-harry-alternate">Frontend</label>
+            </div>
+            <div>
+            <input type="radio" name="family" id="back" value="Backend">
+            <label for="back" class="font-harry-alternate">Backend</label>
+            </div>
+            <div>
+            <input type="radio" name="family" id="full" value="FullStack">
+            <label for="full" class="font-harry-alternate">FullStack</label>
+            </div>
+        </section>
+            
+        <section id="content-conteudos">
+            <label for="" id="label-content" class=" font-harry">Qual conteúdo você está com mais vontade de aprender?</label>
+
+            <div>
+                <input type="checkbox" class='subject lessonItem' name="ling" id="HoFs" value="HoFs">
+                <label for="HoFs" class="font-harry-alternate">HoFs</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" class='subject lessonItem' name="ling" id="Jest" value="Jest">
+                <label for="Jest" class="font-harry-alternate">Jest</label>
+            </div>
+
+            <div>
+                <input type="checkbox" class='subject lessonItem' name="ling" id="Promises" value="Promises">
+                <label for="Promises" class="font-harry-alternate">Promises</label>
+            </div>
+
+            <div>
+                <input type="checkbox" class='subject lessonItem' name="ling" id="React" value="React">
+                <label for="React" class="font-harry-alternate">React</label>
+            </div>
+
+            <div>
+                <input type="checkbox" class='subject lessonItem' name="ling" id="SQL" value="SQL">
+                <label for="SQL" class="font-harry-alternate">SQL</label>
+            </div>
+
+            <div>
+                <input type="checkbox" class='subject lessonItem' name="ling" id="Python" value="Python">
+                <label for="Python" class="font-harry-alternate">Python</label>
+            </div>
+        </section>
+            <section id="rateSection">
+                <!--Nessa seção eu adicionei div's para que cada radio fique um do lado do outro-->
+                <div id="label-rate-section">
+                    <label for="" id="label-rate" class="font-harry">Como você avalia a Trybewarts?</label>
+                </div>
+                <div id="rate-section">
+                    <div>
+                        <label for="um" class="font-harry-alternate">1</label>
+                        <input type="radio" name="rate" id="um" value="1">
+                    </div>
+                    <div>
+                        <label for="dois" class="font-harry-alternate">2</label>
+                        <input type="radio" name="rate" id="dois" value="2">
+                    </div>
+                    <div>
+                        <label for="tres" class="font-harry-alternate">3</label>
+                        <input type="radio" name="rate" id="tres" value="3">
+                    </div>
+                    <div>
+                        <label for="quatro" class="font-harry-alternate">4</label>
+                        <input type="radio" name="rate" id="quatro" value="4">
+                    </div>
+                    <div>
+                        <label for="cinco" class="font-harry-alternate">5</label>
+                        <input type="radio" name="rate" id="cinco" value="5">
+                    </div>
+                    <div>
+                        <label for="seis" class="font-harry-alternate">6</label>
+                        <input type="radio" name="rate" id="seis" value="6">
+                    </div>
+                    <div>
+                        <label for="sete" class="font-harry-alternate">7</label>
+                        <input type="radio" name="rate" id="sete" value="7">
+                    </div>
+                    <div>
+                        <label for="oito" class="font-harry-alternate">8</label>
+                        <input type="radio" name="rate" id="oito" value="8">
+                    </div>
+                    <div>
+                        <label for="nove" class="font-harry-alternate">9</label>
+                        <input type="radio" name="rate" id="nove" value="9">
+                    </div>
+                    <div>
+                        <label for="dez" class="font-harry-alternate">10</label>
+                        <input type="radio" name="rate" id="dez" value="10">
+                    </div>
+                </div>
+            </section>
+            <!--Limite de 500 caracteres deve ser adicionado-->
+            <!-- Já foi! O limite é setado através da propriedade maxlength, do textarea! Logo abaixo -->
+            <section id="text-area-coment">
+                <div id="toRightCounter">
+                    <label class="textarea font-harry" for="textarea-coment">Deixe seu comentário:</label>
+
+                    <textarea maxlength="500" name="textarea" id="textarea" cols="30" rows="5"
+                        placeholder="Escreva um comentário de até 500 caracteres"
+                        class="font-harry-alternate"></textarea>
+                    <p id="counter" class="font-harry-alternate">Restam 500 caracteres</p>
+                </div>
+            </section>
+
+            <section id="agreement-content">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="label-infos" class="font-harry">Você concorda com o uso das informações
+                    acima?</label>
+            </section>
+
+            <button disabled type="submit" id="submit-btn" class="font-harry">Enviar</button>
+        </form>
+
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Imagem logo da trybewarts"
+            height="500px">
+    </main>
+
+    <footer id="rodape">
+        <p> Direitos reservados à Trybewarts&copy </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
